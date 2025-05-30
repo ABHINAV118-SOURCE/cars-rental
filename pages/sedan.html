@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedans - AutoElite Car Rental</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>AutoElite</h1>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link active">Vehicles</a>
+                <div class="dropdown-content">
+                    <a href="suv.html">SUVs</a>
+                    <a href="sedan.html" class="active">Sedans</a>
+                    <a href="premium.html">Premium Cars</a>
+                    <a href="electric.html">Electric Vehicles</a>
+                </div>
+            </div>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+            <a href="#" class="btn-primary">Book Now</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Category Hero Section -->
+    <section class="category-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">Elegance</span> Meets
+                <span class="highlight">Efficiency</span>
+            </h1>
+            <p class="hero-subtitle">Experience the perfect blend of comfort and performance with our premium sedan collection</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Fuel Efficient</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-couch"></i>
+                    <span>Comfort First</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Top Safety</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#car-grid" class="btn-primary">Explore Sedans</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1617469767053-3c4f8a5d5b1c?q=80&w=1000" alt="Premium Sedan" class="hero-image">
+            <div class="floating-badge">
+                <span class="badge-text">Starting from</span>
+                <span class="badge-price">₹100</span>
+                <span class="badge-period">per day</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section class="brand-section">
+        <div class="brand-container">
+            <h2>Our Sedan Brands</h2>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Honda_logo.svg/2560px-Honda_logo.svg.png" alt="Honda">
+                    </div>
+                    <h3>Honda</h3>
+                    <p>Power of Dreams</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Toyota_carlogo.svg/2560px-Toyota_carlogo.svg.png" alt="Toyota">
+                    </div>
+                    <h3>Toyota</h3>
+                    <p>Let's Go Places</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Hyundai_Motor_Company_logo.svg/2560px-Hyundai_Motor_Company_logo.svg.png" alt="Hyundai">
+                    </div>
+                    <h3>Hyundai</h3>
+                    <p>New Thinking. New Possibilities.</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Volkswagen_logo_2019.svg/2560px-Volkswagen_logo_2019.svg.png" alt="Volkswagen">
+                    </div>
+                    <h3>Volkswagen</h3>
+                    <p>Das Auto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="brand-filter">Brand</label>
+                <select id="brand-filter">
+                    <option value="all">All Brands</option>
+                    <option value="honda">Honda</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="volkswagen">Volkswagen</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-filter">Price Range</label>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="50-100">₹50 - ₹100 per day</option>
+                    <option value="100-150">₹100 - ₹150 per day</option>
+                    <option value="150-200">₹150 - ₹200 per day</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="type-filter">Type</label>
+                <select id="type-filter">
+                    <option value="all">All Types</option>
+                    <option value="compact">Compact Sedan</option>
+                    <option value="mid-size">Mid-size Sedan</option>
+                    <option value="full-size">Full-size Sedan</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Grid Section -->
+    <section class="car-grid">
+        <div class="car-card">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1617469767053-3c4f8a5d5b1c?q=80&w=1000" alt="Honda City">
+                <div class="car-badge">Compact Sedan</div>
+            </div>
+            <div class="car-details">
+                <h3>Honda City</h3>
+                <div class="car-specs">
+                    <span><i class="fas fa-tachometer-alt"></i> 1.5L i-VTEC</span>
+                    <span><i class="fas fa-cog"></i> Automatic</span>
+                    <span><i class="fas fa-chair"></i> 5 Seater</span>
+                </div>
+                <div class="car-price">
+                    <span class="price">₹1,200</span>
+                    <span class="period">per day</span>
+                </div>
+                <button class="btn-primary book-now">Book Now</button>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1617469767053-3c4f8a5d5b1c?q=80&w=1000" alt="Toyota Camry">
+                <div class="car-badge">Mid-size Sedan</div>
+            </div>
+            <div class="car-details">
+                <h3>Toyota Camry</h3>
+                <div class="car-specs">
+                    <span><i class="fas fa-tachometer-alt"></i> 2.5L Hybrid</span>
+                    <span><i class="fas fa-cog"></i> Automatic</span>
+                    <span><i class="fas fa-chair"></i> 5 Seater</span>
+                </div>
+                <div class="car-price">
+                    <span class="price">₹1,800</span>
+                    <span class="period">per day</span>
+                </div>
+                <button class="btn-primary book-now">Book Now</button>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1617469767053-3c4f8a5d5b1c?q=80&w=1000" alt="Hyundai Elantra">
+                <div class="car-badge">Mid-size Sedan</div>
+            </div>
+            <div class="car-details">
+                <h3>Hyundai Elantra</h3>
+                <div class="car-specs">
+                    <span><i class="fas fa-tachometer-alt"></i> 2.0L MPi</span>
+                    <span><i class="fas fa-cog"></i> Automatic</span>
+                    <span><i class="fas fa-chair"></i> 5 Seater</span>
+                </div>
+                <div class="car-price">
+                    <span class="price">₹1,500</span>
+                    <span class="period">per day</span>
+                </div>
+                <button class="btn-primary book-now">Book Now</button>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image">
+                <img src="https://images.unsplash.com/photo-1617469767053-3c4f8a5d5b1c?q=80&w=1000" alt="Volkswagen Jetta">
+                <div class="car-badge">Compact Sedan</div>
+            </div>
+            <div class="car-details">
+                <h3>Volkswagen Jetta</h3>
+                <div class="car-specs">
+                    <span><i class="fas fa-tachometer-alt"></i> 1.4L TSI</span>
+                    <span><i class="fas fa-cog"></i> Automatic</span>
+                    <span><i class="fas fa-chair"></i> 5 Seater</span>
+                </div>
+                <div class="car-price">
+                    <span class="price">₹1,400</span>
+                    <span class="period">per day</span>
+                </div>
+                <button class="btn-primary book-now">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <h2>Why Choose Our Sedans?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-gas-pump"></i>
+                    <h3>Fuel Efficient</h3>
+                    <p>Optimized engines for better mileage</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-couch"></i>
+                    <h3>Comfortable</h3>
+                    <p>Premium interiors for a luxurious ride</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe & Reliable</h3>
+                    <p>Advanced safety features for peace of mind</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-road"></i>
+                    <h3>Perfect for City</h3>
+                    <p>Easy to maneuver in urban environments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>AutoElite</h2>
+                <p>Your premium car rental partner</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="suv.html">SUVs</a>
+                <a href="sedan.html">Sedans</a>
+                <a href="premium.html">Premium Cars</a>
+                <a href="electric.html">Electric Vehicles</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> info@autoelite.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Auto Street, Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AutoElite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/category.js"></script>
+</body>
+</html> 

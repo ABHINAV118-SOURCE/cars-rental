@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite - Premium Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="images/hero-car.png">
+    <link rel="preload" as="image" href="images/suv.jpg">
+    <link rel="preload" as="image" href="images/sedan.jpg">
+    <link rel="preload" as="image" href="images/premium.jpg">
+    <link rel="preload" as="image" href="images/electric.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>AutoElite</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link">Vehicles</a>
+                <div class="dropdown-content">
+                    <a href="pages/suv.html">SUVs</a>
+                    <a href="pages/sedan.html">Sedans</a>
+                    <a href="pages/premium.html">Premium Cars</a>
+                    <a href="pages/electric.html">Electric Vehicles</a>
+                </div>
+            </div>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#" class="btn-primary">Book Now</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Drive</span>
+                    <span class="highlight">the Future</span>
+                </h1>
+                <p class="hero-subtitle">Experience luxury redefined with our premium fleet of vehicles</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-car-side"></i>
+                        <span>Premium Fleet</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="pages/premium.html" class="btn-primary">
+                        <span>Explore Fleet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#categories" class="btn-secondary">
+                        <span>View Categories</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1000" alt="Luxury Car Collection" class="hero-image">
+            </div>
+            <div class="floating-badge">
+                <div class="badge-content">
+                    <span class="badge-text">Starting from</span>
+                    <span class="badge-price">₹150</span>
+                    <span class="badge-period">per day</span>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to Explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Brand Marquee -->
+    <section class="brand-marquee">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2560px-Mercedes-Logo.svg.png" alt="Mercedes-Benz" class="brand-logo">
+                    <div class="brand-info">
+                        <span class="brand-name">Mercedes-Benz</span>
+                        <span class="brand-tagline">The Best or Nothing</span>
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2048px-BMW.svg.png" alt="BMW" class="brand-logo">
+                    <div class="brand-info">
+                        <span class="brand-name">BMW</span>
+                        <span class="brand-tagline">Sheer Driving Pleasure</span>
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi_logo_detail.svg/2560px-Audi_logo_detail.svg.png" alt="Audi" class="brand-logo">
+                    <div class="brand-info">
+                        <span class="brand-name">Audi</span>
+                        <span class="brand-tagline">Vorsprung durch Technik</span>
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Lexus_logo.svg/2560px-Lexus_logo.svg.png" alt="Lexus" class="brand-logo">
+                    <div class="brand-info">
+                        <span class="brand-name">Lexus</span>
+                        <span class="brand-tagline">Experience Amazing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2 class="section-title">Our Vehicle Categories</h2>
+        <div class="category-grid">
+            <a href="pages/suv.html" class="category-card">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=1000" alt="Luxury SUV" loading="lazy">
+                </div>
+                <div class="category-content">
+                    <h3>SUVs</h3>
+                    <p>Spacious and versatile vehicles for any adventure</p>
+                </div>
+            </a>
+            <a href="pages/sedan.html" class="category-card">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1000" alt="Premium Sedan" loading="lazy">
+                </div>
+                <div class="category-content">
+                    <h3>Sedans</h3>
+                    <p>Comfortable and efficient for daily driving</p>
+                </div>
+            </a>
+            <a href="pages/premium.html" class="category-card">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1000" alt="Luxury Car" loading="lazy">
+                </div>
+                <div class="category-content">
+                    <h3>Premium Cars</h3>
+                    <p>Luxury vehicles for the ultimate driving experience</p>
+                </div>
+            </a>
+            <a href="pages/electric.html" class="category-card">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1000" alt="Electric Vehicle" loading="lazy">
+                </div>
+                <div class="category-content">
+                    <h3>Electric Vehicles</h3>
+                    <p>Eco-friendly and innovative transportation</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonial Marquee -->
+    <section class="testimonial-marquee">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <div class="testimonial-item">
+                    <i class="fas fa-star"></i>
+                    <span>"Best car rental experience ever! The premium fleet is amazing."</span>
+                    <span class="author">- Rahul S.</span>
+                </div>
+                <div class="testimonial-item">
+                    <i class="fas fa-star"></i>
+                    <span>"Impeccable service and luxury vehicles. Highly recommended!"</span>
+                    <span class="author">- Priya M.</span>
+                </div>
+                <div class="testimonial-item">
+                    <i class="fas fa-star"></i>
+                    <span>"Professional team and top-notch vehicles. Will rent again!"</span>
+                    <span class="author">- Amit K.</span>
+                </div>
+                <div class="testimonial-item">
+                    <i class="fas fa-star"></i>
+                    <span>"Luxury at its finest. The premium cars are worth every penny."</span>
+                    <span class="author">- Neha P.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose AutoElite?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-car"></i>
+                <h3>Premium Fleet</h3>
+                <p>Choose from our extensive collection of luxury vehicles</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Fully Insured</h3>
+                <p>Comprehensive coverage for peace of mind</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock assistance for all your needs</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Nationwide Service</h3>
+                <p>Available in major cities across the country</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">About AutoElite</h2>
+                <p class="about-subtitle">Your Premium Car Rental Partner Since 2010</p>
+                <div class="about-text">
+                    <p>At AutoElite, we believe that every journey deserves a touch of luxury. With over a decade of experience in the premium car rental industry, we've built our reputation on exceptional service, an extensive fleet of luxury vehicles, and an unwavering commitment to customer satisfaction.</p>
+                    <p>Our mission is to provide you with not just a car, but an experience that elevates your journey. Whether you're looking for a sleek sedan for business travel, a spacious SUV for family adventures, or an eco-friendly electric vehicle, we have the perfect ride for every occasion.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Premium Vehicles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Customer Support</span>
+                    </div>
+                </div>
+                <a href="pages/about.html" class="btn-primary">
+                    <span>Learn More</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1000" alt="AutoElite Showroom" class="main-image">
+                <div class="image-overlay"></div>
+                <div class="experience-badge">
+                    <span class="years">10+</span>
+                    <span class="text">Years of Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info-section">
+                <div class="contact-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-subtitle">We're here to help you find your perfect ride. Reach out to us anytime.</p>
+                </div>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>Call Us</h3>
+                            <p>+91 1234567890</p>
+                            <span>Available 24/7</span>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>Email Us</h3>
+                            <p>info@autoelite.com</p>
+                            <span>Response within 24 hours</span>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-details">
+                            <h3>Visit Us</h3>
+                            <p>123 Auto Street</p>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-section">
+                <form class="contact-form">
+                    <div class="form-header">
+                        <h3>Send us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you shortly.</p>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-group">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <div class="input-group">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <div class="input-group">
+                            <i class="fas fa-comment"></i>
+                            <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>AutoElite</h2>
+                <p>Your premium car rental partner</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="pages/suv.html">SUVs</a>
+                <a href="pages/sedan.html">Sedans</a>
+                <a href="pages/premium.html">Premium Cars</a>
+                <a href="pages/electric.html">Electric Vehicles</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> info@autoelite.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Auto Street, Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AutoElite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
